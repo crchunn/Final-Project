@@ -1,0 +1,5 @@
+# super secret sign in stuff
+import os
+
+SpotifyClientCredentials = os.environ.get('SPOTIPY_CLIENT_ID')
+secret = os.environ.get('SPOTIPY_CLIENT_SECRET')
