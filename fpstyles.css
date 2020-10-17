@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+div {
+    cursor:crosshair;
+}
+
+.navbar {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #ff4500;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+}
+
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+    color: white;
+    font-weight: 1000;
+}
+
+.jumbotron { 
+    background-image: url("/Users/grizzlyjenkins/Personal Documents/WashU/Final Project/spotify_logo_1.jpg"); 
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ff4500;
+    border: 10px;
+    border-style:solid;
+    border-color: black;
+}  
+
+.jumbotron.pre {
+    color: #ff4500;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.card {
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.embed-responsive .card-img-top {
+    object-fit: cover;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none; 
+    background-color: #24252A;
+}
