@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Images/') }}">
     <link rel="stylesheet" src="dist/brand-buttons.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/Users/grizzlyjenkins/Personal Documents/WashU/Final Project/fpstyles.css">
@@ -88,14 +89,14 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="{{ url_for('static', filename='img/spotifydev1.png') }}" alt="Spotify for Developers">
+          <img class="d-block w-100" src="{{ url_for('static', filename='Images/spotifydev1.png') }}" alt="Spotify for Developers">
           
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="/Users/grizzlyjenkins/Personal Documents/WashU/Final Project/GitHub1.jpeg" alt="GitHub">
+          <img class="d-block w-100" src="{{ url_for('static', filename='Images/GitHub1.jpeg') }}" alt="GitHub">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="/Users/grizzlyjenkins/Personal Documents/WashU/Final Project/ML1.jpeg" alt="Machine Learning">
+          <img class="d-block w-100" src="{{ url_for('static', filename='Images/ML1.jpeg') }}" alt="Machine Learning">
           <!-- img src='' -->
         </div>
       </div>
@@ -173,9 +174,9 @@
     <div class="row">
       <div class="col-sm d-flex align-items-stretch">
         <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
-        <img alt="Carrie Chunn" class="card-img-top embed-responsive-item" src="/Users/grizzlyjenkins/Personal Documents/WashU/Final Project/CarrieLI.jpeg">
+        <img alt="Carrie Chunn" class="card-img-top embed-responsive-item" src="{{ url_for('static', filename='Images/CarrieLI.jpeg') }">
         <div class="card-body text-center">
-          <h5 class="card-title">Carrie Chun</h5>
+          <h5 class="card-title">Carrie Chunn</h5>
           <p class="card-text">Professional Materials</p>
           <a href="https://www.linkedin.com/in/carrie-chunn/" class="btn btn-primary">LinkedIn</a>
           <a href="https://github.com/crchunn" class="btn btn-primary">GitHub</a>
@@ -185,7 +186,7 @@
 
     <div class="col-sm d-flex align-items-stretch">
       <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
-      <img alt="Kevin Eggert" class="card-img-top embed-responsive-item" src="/Users/grizzlyjenkins/Personal Documents/WashU/Final Project/KevinLI.jpeg">
+      <img alt="Kevin Eggert" class="card-img-top embed-responsive-item" src="{{ url_for('static', filename='Images/KevinLI.jpeg') }">
       <div class="card-body text-center">
         <h5 class="card-title">Kevin Eggert</h5>
         <p class="card-text">Professional Materials</p>
@@ -197,7 +198,7 @@
 
     <div class="col-sm d-flex align-items-stretch">
       <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
-      <img  alt="Josh Jenkins" class="card-img-top embed-responsive-item" src="/Users/grizzlyjenkins/Personal Documents/WashU/Final Project/JoshLI.png">
+      <img  alt="Josh Jenkins" class="card-img-top embed-responsive-item" src="{{ url_for('static', filename='Images/JoshLI.jpeg') }">
       <div class="card-body text-center">
         <h5 class="card-title">Josh Jenkins</h5>
         <p class="card-text">Professional Materials</p>
