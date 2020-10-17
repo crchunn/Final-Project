@@ -50,6 +50,3 @@ def main():
     else:
         logger.error("Can't find artist: %s", artist)
 
-
-if __name__ == '__main__':
-    main()

@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request, redirect
 
 import argparse
 import logging
@@ -18,12 +18,22 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-def get_args():
+# def get_args():
     parser = argparse.ArgumentParser(description='Gets albums from artist')
     parser.add_argument('-a', '--artist', required=True,
                         help='Name of Artist')
     return parser.parse_args()
 
+@app.route('/handle_data', methods=['POST'])
+def handle_data():
+    artist_name = request.form.get('Artist')
+    print(artist_name)
+    artist_id = get_artist(artist_name)
+    show_artist_albums(artist_id)
+    return redirect("/")
+    # your codecd ..
+    # return a response
+    # render template instead of redirect
 
 def get_artist(name):
     results = sp.search(q='artist:' + name, type='artist')
@@ -50,13 +60,14 @@ def show_artist_albums(artist):
             seen.add(name)
 
 
-def main():
-    args = get_args()
-    artist = get_artist(args.artist)
-    if artist:
-        show_artist_albums(artist)
-    else:
-        logger.error("Can't find artist: %s", artist)
+
+# def main():
+    # args = get_args()
+    # artist = get_artist(args.artist)
+    # if artist:
+    #     show_artist_albums(artist)
+    # else:
+    #     logger.error("Can't find artist: %s", artist)
 
 if __name__ == '__main__':
     app.run()
