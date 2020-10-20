@@ -59,8 +59,18 @@ header {
     padding: 30px 10%;
 }
 
-.carousel-inner img {
+header.carousel {
+    height: 60%;
+}
+
+.thumbnail {
+    display: inline-block;
+    padding: 0 0 5px;
+}
+
+.carousel-inner {
     object-fit: contain;
+    margin-bottom:50px;
   }
 
 .card {
