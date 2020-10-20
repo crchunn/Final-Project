@@ -10,7 +10,7 @@ div {
     padding: 0;
     color: white;
     background-color: #ff4500;
-    font-family: Georgia, Times, "Times New Roman", serif;
+    /* font-family: Georgia, Times, "Times New Roman", serif; */
     font-weight: 500;
     font-size: 16px;
     padding: 5px;
@@ -58,6 +58,20 @@ header {
     align-items: center;
     padding: 30px 10%;
 }
+
+header.carousel {
+    height: 60%;
+}
+
+.thumbnail {
+    display: inline-block;
+    padding: 0 0 5px;
+}
+
+.carousel-inner {
+    object-fit: contain;
+    margin-bottom:50px;
+  }
 
 .card {
     margin: 0 auto; 

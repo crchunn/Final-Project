@@ -9,11 +9,11 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/styles.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='static/css/fpstyles.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Images/') }}">
   <link rel="stylesheet" src="dist/brand-buttons.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="/Users/grizzlyjenkins/Personal Documents/WashU/Final Project/fpstyles.css">
+  <!-- <link rel="stylesheet" href="/Users/grizzlyjenkins/Personal Documents/WashU/Final Project/Final-Project/static/css/fpstyles.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"
     integrity="sha512-f8mUMCRNrJxPBDzPJx3n+Y5TC5xp6SmStstEfgsDXZJTcxBakoB5hvPLhAfJKa9rCvH+n3xpJ2vQByxLk4WP2g=="
     crossorigin="anonymous" />
@@ -59,11 +59,16 @@
     </div>
   </nav>
 
-  <!--  CREATE JUMBOTRON HERE WITH METHODOLGY BRIEFING -->
+  <!--  HERO-UNIT -->
 
-  <div class="jumbotron specialjum; rounded">
-    <!-- <h1 class="display-4">Investigate happiness across the United States</h1>
-      <pre class="lead">We found data that shows the happiest cities and states in the United States</pre> -->
+  <div class="hero-unit">
+    <h1>Heading</h1>
+    <p>Tagline</p>
+    <p>
+      <a class="btn btn-primary btn-large">
+        Learn more
+      </a>
+    </p>
   </div>
 
   <!-- iFrame -->
@@ -85,9 +90,30 @@
 
   <br>
 
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img data-src="holder.js/300x200" alt="">
+      </div>
+      <div class="col-sm-6 col-md-4"></div>
+      <div class="thumbnail">
+        <img data-src="holder.js/300x200" alt="">
+      </div>
+      <div class="col-sm-6 col-md-4"></div>
+      <div class="thumbnail">
+        <img data-src="holder.js/300x200" alt="">
+      </div>
+      <div class="col-sm-6 col-md-4"></div>
+      <div class="thumbnail">
+        <img data-src="holder.js/300x200" alt="">
+      </div>
+  </div>
+
+  <br>
+
   <!-- Carousel -->
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -130,61 +156,12 @@
     </div>
   </div>
 
-  <!-- Create new container with role main class container, div class is blog-post with date and link to data sites -->
-
-
   <!-- CREATE ABOUT SECTION WITH WHO DID WHAT -->
 
   <!-- CREATE ELSEWHERE SECTION WITH LINK TO GITHUB MATERIALS -->
-  <!-- <h1>Methodology</h1>
+  <!-- <h1>Methodology</h1> -->
 
     <br>
-
-    <div id="accordion">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              How the data was gathered.
-            </button>
-          </h5>
-        </div>
-    
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="card-body">
-            In order to determine the happiest cities in America, WalletHub compared 182 of the largest cities — including the 150 most populated U.S. cities, plus at least two of the most populated cities in each state — across three key dimensions: 1) Emotional & Physical Well-Being, 2) Income & Employment and 3) Community & Environment.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Metrics.
-            </button>
-          </h5>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body">
-            We evaluated these categories using 30 relevant metrics, which are listed below with their corresponding weights. Each metric was graded on a 100-point scale, with a score of 100 representing maximum happiness. Data for metrics marked with an asterisk (*) were available only at the state level.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              How a score was reached.
-            </button>
-          </h5>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            We then determined each city’s weighted average across all metrics to calculate its overall score and used the resulting scores to rank-order our sample.
-          </div>
-        </div>
-      </div>
-    </div> -->
 
   <!-- CARDS -->
 
@@ -230,6 +207,8 @@
       </div>
     </div>
   </div>
+
+  <hr>
 
   <footer class="footer">
     <div class="container">
