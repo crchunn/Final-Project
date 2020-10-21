@@ -43,8 +43,8 @@ def handle_data():
     artist_name = request.form.get('Artist')
     print(artist_name)
     artist_id = get_artist(artist_name)
-    show_artist_albums(artist_id)
-    return render_template('popup.html')  
+    artist_albums = get_artist_albums(artist_id)
+    return render_template('popup.html', artist_albums = artist_albums)  
     
     # your codecd ..
     # return a response
@@ -62,7 +62,7 @@ def get_artist(name):
         return None
 
 
-def show_artist_albums(artist):
+def get_artist_albums(artist):
     albums = []
     results = sp.artist_albums(artist['id'], album_type='album')
     albums.extend(results['items'])
@@ -74,8 +74,10 @@ def show_artist_albums(artist):
     for album in albums:
         name = album['name']
         if name not in seen:
-            logger.info('ALBUM: %s', name)
+            # logger.info('ALBUM: %s', name)
             seen.add(name)
+
+    return list(seen)
 
 
 #in templatetags/user_list_tags.py
