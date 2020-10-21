@@ -14,8 +14,10 @@ sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
+    # landing page
     return render_template('index.html')
 
 # def get_args():
@@ -24,16 +26,20 @@ def index():
                         help='Name of Artist')
     return parser.parse_args()
 
+
 @app.route('/handle_data', methods=['POST'])
 def handle_data():
     artist_name = request.form.get('Artist')
     print(artist_name)
     artist_id = get_artist(artist_name)
     show_artist_albums(artist_id)
-    return redirect("/")
+    return render_template(show_artist_albums)
     # your codecd ..
     # return a response
     # render template instead of redirect
+    # $('#myModal').modal(options)
+    # $('#example').popover(options)
+
 
 def get_artist(name):
     results = sp.search(q='artist:' + name, type='artist')
@@ -60,14 +66,30 @@ def show_artist_albums(artist):
             seen.add(name)
 
 
+# $('a.popup-ajax').popover({
+#     "html": true,
+#     "content": function(){
+#         var div_id="tmp-id-" + $.now()
+#         return details_in_popup($(this).attr('href'), div_id)
+#     }
+# })
+
+# function details_in_popup(link, div_id){$.ajax({
+#     url: link,
+#     success: function(response){$('#'+div_id).html(response)
+#                                 }
+# })
+#     return '<div id="' + div_id + '">Loading...</div>'
+# }
+
 
 # def main():
-    # args = get_args()
-    # artist = get_artist(args.artist)
-    # if artist:
-    #     show_artist_albums(artist)
-    # else:
-    #     logger.error("Can't find artist: %s", artist)
+# args = get_args()
+# artist = get_artist(args.artist)
+# if artist:
+#     show_artist_albums(artist)
+# else:
+#     logger.error("Can't find artist: %s", artist)
 
 if __name__ == '__main__':
     app.run()
