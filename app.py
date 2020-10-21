@@ -5,7 +5,9 @@ import argparse
 import logging
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-
+# from django import template
+# from django import forms
+# register = template.Library()
 
 logger = logging.getLogger('examples.artist_albums')
 logging.basicConfig(level='INFO')
@@ -20,6 +22,15 @@ def index():
     # landing page
     return render_template('index.html')
 
+@app.route('/tableau/')
+def tableau():
+    return render_template('tableau.html')
+
+@app.route('/popup/')
+def about():
+    return render_template('popup.html')
+
+
 # def get_args():
     parser = argparse.ArgumentParser(description='Gets albums from artist')
     parser.add_argument('-a', '--artist', required=True,
@@ -33,7 +44,8 @@ def handle_data():
     print(artist_name)
     artist_id = get_artist(artist_name)
     show_artist_albums(artist_id)
-    return render_template(show_artist_albums)
+    return render_template('popup.html')  
+    
     # your codecd ..
     # return a response
     # render template instead of redirect
@@ -64,6 +76,38 @@ def show_artist_albums(artist):
         if name not in seen:
             logger.info('ALBUM: %s', name)
             seen.add(name)
+
+
+#in templatetags/user_list_tags.py
+
+
+#this is djangp template tag for user selection form
+# """ @register.filter
+# def user_select_field(form, userid):
+#     """
+#     # returns UserSelectionForm field for a user with userid
+#     """
+#     key = str(userid)
+#     if key not in form.fields.keys():
+#         print 'Key %s not found in dict' % key
+#         return None
+#     #here i use BoundField:
+#     boundField = forms.forms.BoundField(form, form.fields[key], key)
+#     return unicode(boundField)
+
+# @app.route('/login/', methods=['post', 'get'])
+# def login():
+#     message = ''
+#     if request.method == 'POST':
+#         username = request.form.get('username')  # access the data inside 
+#         password = request.form.get('password')
+
+#         if username == 'root' and password == 'pass':
+#             message = "Correct username and password"
+#         else:
+#             message = "Wrong username or password"
+
+#     return render_template('login.html', message=message)   """
 
 
 # $('a.popup-ajax').popover({

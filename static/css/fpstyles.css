@@ -72,6 +72,10 @@ header.carousel {
     object-fit: contain;
     margin-bottom:50px;
   }
+.carousel {
+    width:640px;
+    height:360px;
+  }
 
 .card {
     margin: 0 auto; 
