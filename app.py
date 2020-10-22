@@ -1,16 +1,14 @@
 
 from flask import Flask, render_template, url_for, request, redirect
 
-import argparse
-import logging
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 # from django import template
 # from django import forms
 # register = template.Library()
 
-logger = logging.getLogger('examples.artist_albums')
-logging.basicConfig(level='INFO')
+# logger = logging.getLogger('examples.artist_albums')
+# logging.basicConfig(level='INFO')
 
 sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
 
@@ -32,10 +30,10 @@ def about():
 
 
 # def get_args():
-    parser = argparse.ArgumentParser(description='Gets albums from artist')
-    parser.add_argument('-a', '--artist', required=True,
-                        help='Name of Artist')
-    return parser.parse_args()
+    # parser = argparse.ArgumentParser(description='Gets albums from artist')
+    # parser.add_argument('-a', '--artist', required=True,
+    #                     help='Name of Artist')
+    # return parser.parse_args()
 
 
 @app.route('/handle_data', methods=['POST'])
@@ -74,7 +72,7 @@ def show_artist_albums(artist):
     for album in albums:
         name = album['name']
         if name not in seen:
-            logger.info('ALBUM: %s', name)
+            # logger.info('ALBUM: %s', name)
             seen.add(name)
 
 
