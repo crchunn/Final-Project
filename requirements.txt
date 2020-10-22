@@ -26,7 +26,6 @@ chardet==3.0.4
 citipy==0.0.5
 click==7.1.2
 cloudpickle==1.4.1
-clyent==1.2.2
 colorama==0.4.3
 contextlib2==0.6.0.post1
 contextvars==2.4
