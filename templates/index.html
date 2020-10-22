@@ -148,6 +148,32 @@
             frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col">
+          
+        </div>
+        <div class="col">
+          Want to see your favorite artists albums? Drop their name in to get a listing, and decide for yourself which was the best album!
+          
+        </div>
+        <div class="col">
+          <div class="container">
+            <div class="row">
+              <form action="{{ url_for('handle_data') }}" method="post">
+                <label for="Artist">
+                  Artist?
+                </label>
+                <input type="text" name="Artist">
+                <input type="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
 
       <div class="container">
         <div class="row">
@@ -156,7 +182,9 @@
           </div>
           <div class="col">
             <p>
-              While we may not be able to explain the psyche of the musical brain, we can look at the popular songs of the past and analyze to see, not only what makes them popular, but use machine learning to create a blueprint for  future music. 
+              While we may not be able to explain the psyche of the musical brain, we can look at the popular songs of
+              the past and analyze to see, not only what makes them popular, but use machine learning to create a
+              blueprint for future music.
 
             </p>
           </div>
