@@ -1,58 +1,142 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-        <title>Tableau Visuals</title>
-      </head>
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" href="/">Active</a>
-            </li>
-          </ul>
-     <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">Graphing the Popularity</h1>
-              <p class="lead">Some visuals to show the information Spotify uses.</p>
-            </div>
-          </div>
-    
-    <body>
-      
-        <div class="tableau">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/fpstyles.css') }}">
+
+    <title>Tableau Visuals</title>
+</head>
+<ul class="nav justify-content-end">
+    <li class="nav-item">
+        <a class="nav-link active" href="/">Home</a>
+    </li>
+</ul>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Graphing the Popularity</h1>
+        <p class="lead">Some visuals to show the information Spotify uses.</p>
+    </div>
+</div>
+
+<body>
+
+    <div class="tableau">
         <div class="card">
             <div class="card-body">
-                <a href="https://en.wikipedia.org/wiki/Spotify" title="Wikipedia">Spotify</a> is one of the more popular music streaming sites in the world with 299 million users worldwide, with 138 million paying subscribers. Founded in April of 2006 and launched in October of 2008, the successful audio streaming provider gathers information regarding the sales and streams of music, and provides an API for outside users to gather data. Spotify not only reaches several million customers, but can also influence what customers are listening to based on their previous likes. Users can search for music based on artist and genre, as well as create their own playlists. 
-                For artists, Spotify pays royalties based on the number of artist streams as a proportion of total songs streamed. While this is not the only way artists make receive royalties, Spotify is a major player when it comes to distrubution, paying out approximately 70% of its total revenue to rights holders, who are often the record labels. When reviewing the most popular songs, the focus moves to energy and danceability. 
-                The below graphs are provided by data Spotify shares in csv <a href="https://spotifycharts.com/regional" >form</a>, and can be gathered weekly. 
-                 
+                <p style="text-align: center;">
+                    <a href="https://en.wikipedia.org/wiki/Spotify" title="Wikipedia">Spotify</a> is one of the more
+                    popular music streaming sites in the world with 299 million users worldwide, with 138 million paying
+                    subscribers. Founded in April of 2006 and launched in October of 2008, the successful audio
+                    streaming provider gathers information regarding the sales and streams of music, and provides an API
+                    for outside users to gather data. Spotify not only reaches several million customers, but can also
+                    influence what customers are listening to based on their previous likes. Users can search for music
+                    based on artist and genre, as well as create their own playlists.
+                    For artists, Spotify pays royalties based on the number of artist streams as a proportion of total
+                    songs streamed. While this is not the only way artists make receive royalties, Spotify is a major
+                    player when it comes to distrubution, paying out approximately 70% of its total revenue to rights
+                    holders, who are often the record labels.
+                    <br>
+                    When reviewing the most popular songs, the focus moves to energy and danceability.
+                    The below graphs are provided by data Spotify shares in csv <a
+                        href="https://spotifycharts.com/regional">form</a>, and can be gathered weekly.
+                </p>
+
+
             </div>
-          </div>
-            
-        
+        </div>
 
 
-        <div class='tableauPlaceholder' id='viz1603242271418' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_16031552265290&#47;MostPopularSongs&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Spotify_16031552265290&#47;MostPopularSongs' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_16031552265290&#47;MostPopularSongs&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1603242271418');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1127px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+        <div class='tableauPlaceholder' id='viz1603242271418' style='position: relative'><noscript><a href='#'><img
+                        alt=' '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_16031552265290&#47;MostPopularSongs&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Spotify_16031552265290&#47;MostPopularSongs' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_16031552265290&#47;MostPopularSongs&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en' />
+                <param name='filter' value='publish=yes' /></object></div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1603242271418');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; }
+            else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; }
+            else { vizElement.style.width = '100%'; vizElement.style.height = '1127px'; }
+            var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
         <br>
         <br>
         <div class="card">
             <div class="card-body">
-              Of course, more information can be found based on the different <a href="https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/" >criteria</a> Spotify uses to determine how successful a track will be. Danceability is how suitable a track is for dancing, based on a combination of tempo, rhythm stability, beat strength and overall regularity. Energy is a measure of intensity and activity, a track that is fast, loud and noisy. These indicators, including speechiness(which includes, talk shows, audio books and rap), often combine for a perfect storm to drive popularity. The more popular a song, the more streams and in the end, more revenue for all. 
-              The below visuals were provided by a <a href="https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks" >csv</a> that took the last 100 years of songs and pulled different aspects out to determine where it would fall. We shrunk the information down to the last 20 years to narrow the scope. While there are several factors to consider, danceability and energy   seem to coincide to create the more popular tracks. There are outliers, of course, but the bulk of the popular songs will also be energetic. 
+                Of course, more information can be found based on the different <a
+                    href="https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/">criteria</a>
+                Spotify uses to determine how successful a track will be. Danceability is how suitable a track is for
+                dancing, based on a combination of tempo, rhythm stability, beat strength and overall regularity. Energy
+                is a measure of intensity and activity, a track that is fast, loud and noisy. These indicators,
+                including speechiness(which includes, talk shows, audio books and rap), often combine for a perfect
+                storm to drive popularity. The more popular a song, the more streams and in the end, more revenue for
+                all.
+                <br>
+                The below visuals were provided by a <a
+                    href="https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks">csv</a> that took the
+                last 100 years of songs and pulled different aspects out to determine where it would fall. We shrunk the
+                information down to the last 20 years to narrow the scope. While there are several factors to consider,
+                danceability and energy seem to coincide to create the more popular tracks. There are outliers, of
+                course, but the bulk of the popular songs will also be energetic.
 
-              Citation: Wikipedia; Spotify
+                Citation: Wikipedia; Spotify
             </div>
-          </div>
+        </div>
 
-        <div class='tableauPlaceholder' id='viz1603160013087' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_16031552265290&#47;SpotifyTopArtists&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Spotify_16031552265290&#47;SpotifyTopArtists' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_16031552265290&#47;SpotifyTopArtists&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1603160013087');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-    
-    
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+        <div class='tableauPlaceholder' id='viz1603160013087' style='position: relative'><noscript><a href='#'><img
+                        alt=' '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_16031552265290&#47;SpotifyTopArtists&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Spotify_16031552265290&#47;SpotifyTopArtists' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_16031552265290&#47;SpotifyTopArtists&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en' />
+                <param name='filter' value='publish=yes' /></object></div>
+        <script
+            type='text/javascript'>                    var divElement = document.getElementById('viz1603160013087'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1027px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
 </html>
