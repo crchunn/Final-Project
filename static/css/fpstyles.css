@@ -1,9 +1,27 @@
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+
 .carousel {
     width:640px;
     height:360px;
   }
   
-  p {
-    font-size: medium;
-    text-align: left;
-  }
+p {
+  font-size: medium;
+  text-align: left;
+}
+
+.jumbotron {
+  background-size: cover;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.lead {
+  max-width: 550px;
+  margin: 0px auto;
+}
+
+p.mb-4 {
+  font-size: medium;
+  text-align: center;
+}
