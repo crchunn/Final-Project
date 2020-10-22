@@ -7,21 +7,34 @@
 
   <!-- links to stylesheets -->
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Flask Interaction -->
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/fpstyles.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Images/') }}">
+
+  <!-- Brand Buttons -->
   <link rel="stylesheet" src="dist/brand-buttons.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Bootstrap JS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"
     integrity="sha512-f8mUMCRNrJxPBDzPJx3n+Y5TC5xp6SmStstEfgsDXZJTcxBakoB5hvPLhAfJKa9rCvH+n3xpJ2vQByxLk4WP2g=="
-    crossorigin="anonymous" />
+    crossorigin="anonymous"/> -->
+
+    <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/ff5a97e55f.js" crossorigin="anonymous"></script>
+
 </head>
 
+<!-- MAIN BODY -->
 <body style="background-color: white;text-align:center">
-  <!-- <div class="home"> -->
+
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!-- Left NavBar -->
     <a class="navbar-brand" href="/">RedTeam</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,13 +59,7 @@
         </li>
       </ul>
 
-      <!-- <div class="container">
-      <a class="blog-header-logo text-dark; text-align:center">Red Group</a>
-    </div> -->
-
-
-
-
+      <!-- Right NavBar -->
       <ul class="nav navbar-nav navbar-right"></ul>
       <span class="navbar-text">
         Spotify Music Trends
@@ -61,9 +68,9 @@
     </div>
   </nav>
 
+  <!-- End NavBar -->
 
   <!--  HERO-UNIT -->
-
   <div class="hero-unit">
     <h1>Heading</h1>
     <!-- <img class="nav-ufo" src="images/wavy.png"> -->
