@@ -25,8 +25,12 @@ def tableau():
     return render_template('tableau.html')
 
 @app.route('/popup')
-def about():
+def popup():
     return render_template('popup.html')
+
+@app.route('/tableau2')
+def tableau2():
+    return render_template('tableau2.html')
 
 
 # def get_args():
