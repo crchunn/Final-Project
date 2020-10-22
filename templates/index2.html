@@ -40,9 +40,9 @@
                         Code
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/scatter">Machine Learning</a>
+                        <a class="dropdown-item" href="/tableau2">Machine Learning</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="tableau.html">Tableau</a>
+                        <a class="dropdown-item" href="/tableau">Tableau</a>
                     </div>
                 </li>
             </ul>
@@ -76,15 +76,16 @@
     <div class="hero-unit">
         <h1>Forecasting the Next Big Hit </h1>
         <p>Using Machine Learning to determine whether or not the next hit is danceable.</p>
-        <p>
+        <!-- <p>
             <a class="btn btn-primary btn-large">
                 How is Your Favorite Artist Faring?
             </a>
-        </p>
+        </p> -->
     </div>
     <div class="container">
         <div class="row">
-            <input class="btn btn-primary" type="button" value="Artist">
+            
+            <!-- <input class="btn btn-primary" type="button" value="Artist"> -->
             <form action="{{ url_for('handle_data') }}" method="post">
                 <label for="Artist">
                     Artist?
