@@ -67,7 +67,7 @@
           <div class="container-fluid">
             <div class="navbar-header">
               <a class="navbar-brand" href="/">Spotify Music Trends</a> 
-                <img class="nav-music" src="/images/250px-Spotify_logo_with_text.svg.png">
+                <img class="nav-music" src="{{ url_for('static', filename='Images/250px-Spotify_logo_with_text.svg.png') }}">
               </a>
             </div>
           </div>
@@ -82,16 +82,14 @@
     </nav>
 
     <!--  HERO-UNIT -->
-
-    <div class="hero-unit">
-        <h1>Forecasting the Next Big Hit </h1>
-        <p>Using Machine Learning to determine whether or not the next hit is danceable.</p>
-        <!-- <p>
-            <a class="btn btn-primary btn-large">
-                How is Your Favorite Artist Faring?
-            </a>
-        </p> -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Forecasting the Next Big Hit</h1>
+        <p class="lead">Using Machine Learning to determine whether or not the next hit is danceable.</p>
+      </div>
     </div>
+    
+        
     <div class="container">
         <div class="row">
             
@@ -114,8 +112,8 @@
   <br>
 
   <!-- iFrame for Spotify Song Player -->
-  <iframe src="https://developer.spotify.com/documentation/web-playback-sdk/" width="300"
-    height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  <!-- <iframe src="https://developer.spotify.com/documentation/web-playback-sdk/" width="300"
+    height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
 
   <!-- MEDIA -->
 
