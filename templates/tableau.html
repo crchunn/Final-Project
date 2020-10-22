@@ -6,6 +6,7 @@
     
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/fpstyles.css') }}">
     
         <title>Tableau Visuals</title>
       </head>
@@ -26,9 +27,12 @@
         <div class="tableau">
         <div class="card">
             <div class="card-body">
+                <p style="text-align: center;"> 
                 <a href="https://en.wikipedia.org/wiki/Spotify" title="Wikipedia">Spotify</a> is one of the more popular music streaming sites in the world with 299 million users worldwide, with 138 million paying subscribers. Founded in April of 2006 and launched in October of 2008, the successful audio streaming provider gathers information regarding the sales and streams of music, and provides an API for outside users to gather data. Spotify not only reaches several million customers, but can also influence what customers are listening to based on their previous likes. Users can search for music based on artist and genre, as well as create their own playlists. 
                 For artists, Spotify pays royalties based on the number of artist streams as a proportion of total songs streamed. While this is not the only way artists make receive royalties, Spotify is a major player when it comes to distrubution, paying out approximately 70% of its total revenue to rights holders, who are often the record labels. When reviewing the most popular songs, the focus moves to energy and danceability. 
                 The below graphs are provided by data Spotify shares in csv <a href="https://spotifycharts.com/regional" >form</a>, and can be gathered weekly. 
+                </p>
+               
                  
             </div>
           </div>
