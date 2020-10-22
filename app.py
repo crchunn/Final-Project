@@ -20,11 +20,11 @@ def index():
     # landing page
     return render_template('index.html')
 
-@app.route('/tableau/')
+@app.route('/tableau')
 def tableau():
     return render_template('tableau.html')
 
-@app.route('/popup/')
+@app.route('/popup')
 def about():
     return render_template('popup.html')
 
