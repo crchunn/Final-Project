@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+</head>
+<body>
+    <div class="popup">
+    <div class="row">
+        {% for album in artist_albums %}
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{ artist_name }}</h5>
+            <p class="card-text">{{ artist_albums }}</p>
+            <!-- <a href="{{ movie.imdb_link }}" class="card-link">IMDB page</a> -->
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+</body>
+
+</html>
