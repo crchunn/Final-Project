@@ -32,6 +32,10 @@ def popup():
 def tableau2():
     return render_template('tableau2.html')
 
+@app.route('/machine')
+def machine():
+    return render_template('machine-learning.html')
+
 
 # def get_args():
     # parser = argparse.ArgumentParser(description='Gets albums from artist')

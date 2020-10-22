@@ -45,7 +45,7 @@
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Code
                     </a>
@@ -53,6 +53,8 @@
                         <a class="dropdown-item" href="/tableau2">Machine Learning</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="/tableau">Tableau</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/machine">Machine Learning Graphs</a>
                     </div>
                 </li>
             </ul>
@@ -90,21 +92,44 @@
     </div>
     
         
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             
             <!-- <input class="btn btn-primary" type="button" value="Artist"> -->
-            <form action="{{ url_for('handle_data') }}" method="post">
+            <!-- <form action="{{ url_for('handle_data') }}" method="post">
                 <label for="Artist">
                     Artist?
                 </label>
                 <input type="text" name="Artist">
                 <input type="submit">
             </form>
-        </div>
+        </div> --> 
 
+ <div class="media">
+    <img src="static/Images/notes.png" class="align-self-start mr-3" alt="notes.png">
+    <div class="media-body">
+      <h5 class="mt-0; text-left">Predicting popular genres on Spotify.</h5>
+      <pre class="text-left">
+          Using information regarding Spotify's most popular songs so far in 2020, as well as the last 20 years, to predict what genres will be popular in 2021 in the United States.</pre>
+    </div>
+  </div>
 
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p>What makes a song popular? What is the driving force behind a beat that entices individuals to listen over and over again? Even more important to the music industry, what is the magic formula that propels consumers to purchase a track or album? What is it that will convert a consumer into a life long fan?
+              According to <a href="https://www.psychologytoday.com/us/blog/finding-new-home/201806/why-do-some-songs-become-popular" title="psychologytoday">Pychology Today</a> "a song needs to be similar enough 'to evoke the warm glow of familiarity' but atypical enough to 'feel new and exciting'", which may be why remixes are so popular. 
+              They also report that lyrical differentation is important for success. However, for dance music, and pop, there is less of a relationship between lyrics and popularity. 
+              <a href="https://www8.gsb.columbia.edu/articles/projects/what-makes-a-hit/" >Columbia Business School</a> puts forth that the sonic features of a song, "like beat, “acousticness,” and “valence,” or mood" play an important role in the popularity of a song. They also say, "a hit song, or any other cultural product – like a film, or a novel — can’t simply be reverse engineered from what’s been popular in the past. Popular success really is more art than science."
 
+              Citation: Psychology Today, 06/2018; Berger, J., & Packard, G. (in press). Are atypical things more popular? Psychological Science. doi:10.1177/0956797618759465. 
+              Columbia Business School articles "What Makes a Hit," by <a href="https://github.com/colinmorris/atypicality" >Colin Morris</a>; “What Makes Popular Culture Popular? Product Features and Optimal Differentiation in Music,” by Michael Mauskapf and Noah Askin.
+              </p>
+            </div>
+            <div class="col">
+              <iframe src="https://open.spotify.com/embed/track/6UelLqGlWMcVH1E5c4H7lY" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
 
 
  
@@ -117,15 +142,7 @@
 
   <!-- MEDIA -->
 
-  <div class="media">
-    <!-- <img src="..." class="align-self-start mr-3" alt="..."> -->
-    <div class="media-body">
-      <h5 class="mt-0; text-left">Predicting popular genres on Spotify.</h5>
-      <pre class="text-left">
-          Using information regarding Spotify's most popular songs so far in 2020, as well as the last 20 years, to predict what genres will be popular in 2021 in the United States.</pre>
-    </div>
-  </div>
-
+ 
   <br>
 
   <!-- <div class="row">
