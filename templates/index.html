@@ -57,9 +57,9 @@
                         Code
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/scatter">Machine Learning</a>
+                      <a class="dropdown-item" href="/tableau2">Machine Learning</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="tableau.html">Tableau</a>
+                        <a class="dropdown-item" href="/tableau">Tableau</a>
                     </div>
                 </li>
             </ul>
@@ -69,7 +69,7 @@
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">Spotify Music Trends</a> 
+              <a class="navbar-brand" href="/">Spotify Music Trends</a> 
                 <img class="nav-music" src="/images/250px-Spotify_logo_with_text.svg.png">
               </a>
             </div>
@@ -86,14 +86,12 @@
         <h1>Forecasting the Next Big Hit </h1>
         <p>Using Machine Learning to determine whether or not the next hit is danceable.</p>
         <p>
-            <a class="btn btn-primary btn-large">
-                How is Your Favorite Artist Faring?
-            </a>
+            
         </p>
     </div>
     <div class="container">
         <div class="row">
-            <input class="btn btn-primary" type="button" value="Artist">
+          
             <form action="{{ url_for('handle_data') }}" method="post">
                 <label for="Artist">
                     Artist?
@@ -116,7 +114,7 @@
         <div class="media-body">
             <h5 class="mt-0; text-left">Predicting popular genres on Spotify.</h5>
             <pre class="text-left">
-          Using information regarding Spotify's most popular songs so far in 2020, as well as the last 10 years, to determine what drives the popularity of the current hits and what genres will be popular in 2021 in the United States.</pre>
+          Using information regarding Spotify's most popular songs so far in 2020, as well as the last 20 years, to determine what drives the popularity of the current hits and what genres will be popular in 2021 in the United States.</pre>
         </div>
     </div>
 
