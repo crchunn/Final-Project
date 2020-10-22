@@ -1,16 +1,14 @@
 
 from flask import Flask, render_template, url_for, request, redirect
 
-import argparse
-import logging
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 # from django import template
 # from django import forms
 # register = template.Library()
 
-logger = logging.getLogger('examples.artist_albums')
-logging.basicConfig(level='INFO')
+# logger = logging.getLogger('examples.artist_albums')
+# logging.basicConfig(level='INFO')
 
 sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
 
@@ -22,20 +20,20 @@ def index():
     # landing page
     return render_template('index.html')
 
-@app.route('/tableau/')
+@app.route('/tableau')
 def tableau():
     return render_template('tableau.html')
 
-@app.route('/popup/')
+@app.route('/popup')
 def about():
     return render_template('popup.html')
 
 
 # def get_args():
-    parser = argparse.ArgumentParser(description='Gets albums from artist')
-    parser.add_argument('-a', '--artist', required=True,
-                        help='Name of Artist')
-    return parser.parse_args()
+    # parser = argparse.ArgumentParser(description='Gets albums from artist')
+    # parser.add_argument('-a', '--artist', required=True,
+    #                     help='Name of Artist')
+    # return parser.parse_args()
 
 
 @app.route('/handle_data', methods=['POST'])
