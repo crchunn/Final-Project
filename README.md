@@ -23,6 +23,6 @@ Our group utilized Heroku's free deployment to depoloy our webpage, which can be
 Machine learning (ML) is the study of computer algorithms that improve automatically through expertise.[1][2] It is seen as a subset of artificial intelligeence. Machine Learning Algorithms build a mathemtical model based on sample data, known as training data to make predictions or decisions without being explicitly programmed to do so.[3] For more information on machine learning, you can go to <https://en.wikipedia.org/wiki/Machine_learning>.
 
 ### Matplotlib
-Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy at <https://en.wikipedia.org/wiki/NumPy>. SciPy at <https://en.wikipedia.org/wiki/SciPy> makes use of Matplotlib.
+Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy at <https://en.wikipedia.org/wiki/NumPy>. SciPy at <https://en.wikipedia.org/wiki/SciPy> makes use of Matplotlib. With Matplotlib, static, animated, and interactive visualizations can be created in Python. 
 
 ### Pandas
