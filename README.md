@@ -19,3 +19,5 @@ Heroku is a cloud platform as a service (PaaS) supporting several programming la
 Our group utilized Heroku's free deployment to depoloy our webpage, which can be seen at <https://spotify-ml-redgroup.herokuapp.com/>. For more information on Heroku, check out their website or read up on <https://en.wikipedia.org/wiki/Heroku">.
 
 
+### Machine Learning
+Machine learning (ML) is the study of computer algorithms that improve automatically through expertise. It is seen as a subset of artificial intelligeence. Machine Learning Algorithms build a mathemtical model based on sample data, known as training data to make predictions or decisions without being explicitly programmed to do so. Check out machine learning at <https://en.wikipedia.org/wiki/Machine_learning>
