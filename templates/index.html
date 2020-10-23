@@ -5,11 +5,10 @@
   <meta charset="UTF-8">
   <title>Spotify Genre Predictor</title>
 
-  <!-- links to stylesheets -->
+  <!-- STYLESHEETS -->
 
-  <!-- Flask Interaction -->
+  <!-- Flask Interaction/ Link to CSS -->
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/fpstyles.css') }}">
-  <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Images/') }}"> -->
 
   <!-- Brand Buttons -->
   <link rel="stylesheet" src="dist/brand-buttons.min.css">
@@ -17,12 +16,6 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <!-- Bootstrap JS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"
-    integrity="sha512-f8mUMCRNrJxPBDzPJx3n+Y5TC5xp6SmStstEfgsDXZJTcxBakoB5hvPLhAfJKa9rCvH+n3xpJ2vQByxLk4WP2g=="
-    crossorigin="anonymous"/> -->
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/ff5a97e55f.js" crossorigin="anonymous"></script>
@@ -33,6 +26,7 @@
 
 <body style="background-color: white;text-align:center">
 
+  <!-- NAVBAR -->
   <div class="index">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="/">RedTeam</a>
@@ -41,6 +35,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <!-- Left NavBar -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -61,11 +56,7 @@
           </li>
         </ul>
 
-        <!-- <div class="container">
-      <a class="blog-header-logo text-dark; text-align:center">Red Group</a>
-    </div> -->
-
-
+        <!-- Right NavBar -->
         <div class="wrapper">
           <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -86,37 +77,30 @@
         </div>
     </nav>
 
-    <!--  HERO-UNIT -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
+    <!--  JUMBOTRON -->
+    <div class="jumbotron jumbotron-fluid text-white jumbotron-image shadow" style="background-image: url({{ url_for('static', filename='Images/croppedvinyl.jpg') }});">
+      <div class="lead">
         <h1 class="display-4">Forecasting the Next Big Hit</h1>
-        <p class="lead">Using Machine Learning to determine whether or not the next hit is danceable.</p>
+        <p class="mb-4">Using Machine Learning to determine whether or not the next hit is danceable.</p>
       </div>
     </div>
 
-
-    <!-- <div class="container">
-        <div class="row">
-            
-            <!-- <input class="btn btn-primary" type="button" value="Artist"> -->
-    <!-- <form action="{{ url_for('handle_data') }}" method="post">
-                <label for="Artist">
-                    Artist?
-                </label>
-                <input type="text" name="Artist">
-                <input type="submit">
-            </form>
-        </div> -->
-
+    <!-- MEDIA UNIT -->
     <div class="media">
-      <img src="static/Images/notes.png" class="align-self-start mr-3" alt="notes.png">
+      <img class="align-self-start mr-3" src="static/Images/notes.png" alt="notes.png">
       <div class="media-body">
+<<<<<<< HEAD
         <h5 class="mt-0; text-center"Predicting popular genres on Spotify.</h5>
         <pre class="text-left">
           Using information regarding Spotify's most popular songs so far in 2020, as well as the last 20 years, to predict what genres will be popular in 2021 in the United States.</pre>
+=======
+        <h3 class="mt-0">Predicting popular genres on Spotify.</h5>
+        <p class="lead">Using information regarding Spotify's most popular songs so far in 2020, as well as the last 20 years, to predict what genres will be popular in 2021 in the United States.</p>
+>>>>>>> 2a22622f0ce503d99a36126424d440dc271882d3
       </div>
     </div>
 
+    <!-- BODY CONTEXT -->
     <div class="container">
       <div class="row">
         <div class="col">
@@ -143,6 +127,8 @@
             Product Features and Optimal Differentiation in Music,” by Michael Mauskapf and Noah Askin.
           </p>
         </div>
+
+        <!-- Spotify Player -->
         <div class="col">
           <iframe src="https://open.spotify.com/embed/track/6UelLqGlWMcVH1E5c4H7lY" width="300" height="380"
             frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -154,9 +140,12 @@
         <div class="col">
           
         </div>
+
+        <br>
+
+        <!-- Artist Search -->
         <div class="col">
           Want to see your favorite artists albums? Drop their name in to get a listing, and decide for yourself which was the best album!
-
         </div>
         <div class="col">
           <div class="container">
@@ -172,6 +161,9 @@
           </div>
         </div>
       </div>
+
+      <br>
+      <br>
       <br>
       <br>
 
@@ -184,105 +176,69 @@
             <p style="text-align: left;">
               While we may not be able to explain the psyche of the musical brain, we can look at the popular songs of
               the past and analyze to see, not only what makes them popular, but use machine learning to create a
-              blueprint for future music.
-
+              blueprint for future music. 
+              <p>
+              Using machine learning, we can make predictions using neural networks such as deep learning. We can also use regression to determine variance through our r-squared value. 
+              We can also use different models such as the Lasso Model, Ridge Model, and ElasticNet Model to calculate variance and compare our r-squared values from each model. 
+              Decision Trees and Random Forests can also be implemented to predict our data and through Random Forests, we can see which features contribute the most to our predicted score. 
+              KNN is another model that can help us predict our data. Based on a k value, we can determine the class a data point will belong to and classify our data point. Machine learning is a fun way to predict our data.
             </p>
           </div>
         </div>
 
-
         <br>
 
-        <!-- iFrame for Spotify Song Player -->
-        <!-- <iframe src="https://developer.spotify.com/documentation/web-playback-sdk/" width="300"
-    height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+        <h1>Tools <small>Various resources were used</small></h1>
 
-        <!-- MEDIA -->
+        <hr>
 
-
-        <br>
-
-        <!-- <div class="row">
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img data-src="holder.js/300x200" alt="">
-      </div>
-      <div class="col-sm-6 col-md-4"></div>
-      <div class="thumbnail">
-        <img data-src="holder.js/300x200" alt="">
-      </div>
-      <div class="col-sm-6 col-md-4"></div>
-      <div class="thumbnail">
-        <img data-src="holder.js/300x200" alt="">
-      </div>
-      <div class="col-sm-6 col-md-4"></div>
-      <div class="thumbnail">
-        <img data-src="holder.js/300x200" alt="">
-      </div>
-  </div> -->
-
-        <br>
-
-        <!-- Carousel -->
-
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="{{ url_for('static', filename='Images/spotifydev1.png') }}"
-                alt="Spotify for Developers">
-
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="{{ url_for('static', filename='Images/GitHub1.jpeg') }}" alt="GitHub">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="{{ url_for('static', filename='Images/ML1.jpeg') }}"
-                alt="Machine Learning">
-              <!-- img src='' -->
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="https://developer.spotify.com/" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Spotify for Devs</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
-        <br>
         <div class="container">
           <div class="row">
-            <form action="{{ url_for('handle_data') }}" method="post">
-              <label for="Artist">
-                Artist?
-              </label>
-              <input type="text" name="Artist">
-              <input type="submit">
-            </form>
+            <div class="col">
+              <p style="text-align: left;">Spotipy is a lightweight Python library for the 
+                <a
+                href="https://developer.spotify.com/web-api/"
+                title="Spotify Web API">Spotify Web API</a>
+                . With Spotipy you get full access to all of the music data provided by the Spotify platform. Using an import of spotipy and from spotipy.oauth2 we were then able to import SpotifyClientCredentials to access their seemingly limitless music data.
+              </p>
+
+              <br>
+              
+              <p>
+                Tableau is a visual analytics platform transforming the way we use data to solve problems—empowering people and organizations to make the most of their data. For more information, please check out why many folks use <a href="https://www.tableau.com/why-tableau/what-is-tableau"
+                title="Tableau">Tableau</a>. 
+              </p>
+
+              <br>
+
+              <p>
+                Heroku is a cloud platform as a service (PaaS) supporting several programming languages. One of the first cloud platforms, Heroku has been in development since June 2007, when it supported only the Ruby programming language, but now supports Java, Node.js, Scala, Clojure, Python, PHP, and Go.[1][2] For this reason, Heroku is said to be a polyglot platform as it has features for a developer to build, run and scale applications in a similar manner across most languages. Heroku was acquired by Salesforce.com in 2010 for $212 million.
+
+                <br>
+
+                Our group utilized Heroku's free deployment to depoloy our <a href="https://spotify-ml-redgroup.herokuapp.com/"
+                title="web page">web page</a>. For more information on Heroku, check out their website or read up on <a href="https://en.wikipedia.org/wiki/Heroku"
+                title="web page">Wikipedia</a>.
+              </p>
+
+            </div>    
+
+        <br>
+
+        <hr>
+
+        <div class="container">
+          <div class="row">
+            <h1>Site Developers <small>Feel free to network/ connect.</small></h1>
           </div>
         </div>
 
-        <!-- CREATE ELSEWHERE SECTION WITH LINK TO GITHUB MATERIALS -->
-        <!-- <h1>Methodology</h1> -->
-
-        <br>
-
-        <!-- <div class='tableauPlaceholder' id='viz1603160013087' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_16031552265290&#47;SpotifyTopArtists&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Spotify_16031552265290&#47;SpotifyTopArtists' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_16031552265290&#47;SpotifyTopArtists&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1603160013087');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
-
-        <br>
+        <hr>
 
         <!-- CARDS -->
-
         <div class="container">
           <div class="row">
-            <div class="col-sm d-flex align-items-stretch">
+            <div class="col-md-4">
               <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
                 <img alt="Carrie Chunn" class="card-img-top embed-responsive-item"
                   src="{{ url_for('static', filename='Images/CarrieLI.jpeg') }}">
@@ -295,7 +251,7 @@
               </div>
             </div>
 
-            <div class="col-sm d-flex align-items-stretch">
+            <div class="col-md-4">
               <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
                 <img alt="Kevin Eggert" class="card-img-top embed-responsive-item"
                   src="{{ url_for('static', filename='Images/KevinLI.jpeg') }}">
@@ -303,12 +259,12 @@
                   <h5 class="card-title">Kevin Eggert</h5>
                   <p class="card-text">Professional Materials</p>
                   <a href="https://www.linkedin.com/in/kevin--eggert/" class="btn btn-primary">LinkedIn</a>
-                  <a href="" class="btn btn-primary">GitHub</a>
+                  <a href="https://github.com/keggert" class="btn btn-primary">GitHub</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm d-flex align-items-stretch">
+            <div class="col-md-4">
               <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
                 <img alt="Josh Jenkins" class="card-img-top embed-responsive-item"
                   src="{{ url_for('static', filename='Images/JoshLI.png') }}">
@@ -323,8 +279,52 @@
           </div>
         </div>
 
+        <br>
+
         <hr>
 
+        <br>
+
+        <!-- CAROUSEL -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#spotify" data-slide-to="0" class="active"></li>
+            <li data-target="#github" data-slide-to="1"></li>
+            <li data-target="#machinelearning" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="{{ url_for('static', filename='Images/spotifydev1.png') }}"
+                alt="Spotify for Developers">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="{{ url_for('static', filename='Images/GitHub1.jpeg') }}" alt="GitHub">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="{{ url_for('static', filename='Images/ML1.jpeg') }}"
+                alt="Machine Learning">
+            </div>
+          <a class="carousel-control-prev" href="https://developer.spotify.com/" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Spotify for Devs</span>
+          </a>
+          <!-- <a class="carousel-control-next" href="https://github.com/" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">GitHub</span>
+          </a> -->
+          <a class="carousel-control-next" href="https://en.wikipedia.org/wiki/Machine_learning" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Machine Learning Wikipedia Page</span>
+          </a>
+        </div>
+
+        <br>
+
+        <hr>
+
+        <br>
+
+        <!-- FOOTER -->
         <footer class="footer">
           <div class="container">
             <span style="font-size: 48px">
@@ -335,6 +335,7 @@
           </div>
         </footer>
 
+        <!-- SCRIPTS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
           integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
           crossorigin="anonymous"></script>

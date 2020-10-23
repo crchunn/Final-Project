@@ -1,9 +1,64 @@
-.carousel {
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+
+/* .carousel {
     width:640px;
     height:360px;
+    padding: 10px;
   }
+
+.carousel-inner {
+  border-top: 10px;
+  border-left: 10px;
+  border-right: 10px;
+  border-bottom: 00px;
+  border-color: none;
+  border-style: solid;
+} */
+
+.carousel {
+  box-sizing: content-box;
+  border-top: 10px;
+  border-left: 10px;
+  border-right: 10px;
+  border-bottom: 00px;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.media {
+  font-size: medium;
+  text-align: left;
+}
+
+h1 {
+  font-size: medium;
+  text-align: left;
+}
   
-  p {
-    font-size: medium;
-    text-align: left;
-  }
+p {
+  font-size: medium;
+  text-align: left;
+}
+
+.jumbotron {
+  background-size: cover;
+  text-align: center;
+}
+
+/* label {
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  position: fixed;
+  right: 50px;
+  bottom 30px;
+  padding: 10px;
+} */
+
+p.mb-4 {
+  font-size: medium;
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
