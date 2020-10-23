@@ -1,9 +1,6 @@
 # Predicting Popular Genres on Spotify
 Using information regarding Spotify's most popular songs so far in 2020, as well as the last 10 years, to predict what genres will be popular in 2021 in the United States.
 
-<div class="container">
-          <div class="row">
-            <div class="col">
               <p style="text-align: left;">Spotipy is a lightweight Python library for the 
                 <a
                 href="https://developer.spotify.com/web-api/"
@@ -30,4 +27,3 @@ Using information regarding Spotify's most popular songs so far in 2020, as well
                 title="web page">Wikipedia</a>.
               </p>
 
-            </div> 
