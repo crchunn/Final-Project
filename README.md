@@ -1,7 +1,7 @@
 # Predicting Popular Genres on Spotify
 Using information regarding Spotify's most popular songs so far in 2020, as well as the last 10 years, to predict what genres will be popular in 2021 in the United States.
 
-Spotipy is a lightweight Python library for the Spotify Web API, which can be found at <https://developer.spotify.com/web-api/" title="Spotify Web API>. With Spotipy you get full access to all of the music data provided by the Spotify platform. Using an import of spotipy and from spotipy.oauth2 we were then able to import SpotifyClientCredentials to access their seemingly limitless music data.
+Spotipy is a lightweight Python library for the Spotify Web API, which can be found at <https://developer.spotify.com/web-api/>. With Spotipy you get full access to all of the music data provided by the Spotify platform. Using an import of spotipy and from spotipy.oauth2 we were then able to import SpotifyClientCredentials to access their seemingly limitless music data.
 
 Tableau is a visual analytics platform transforming the way we use data to solve problems—empowering people and organizations to make the most of their data. For more information, please check out why many folks use Tableau at this link: <https://www.tableau.com/why-tableau/what-is-tableau>. 
 
