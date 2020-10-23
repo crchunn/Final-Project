@@ -78,7 +78,8 @@
     </nav>
 
     <!--  JUMBOTRON -->
-    <div class="jumbotron jumbotron-fluid text-white jumbotron-image shadow" style="background-image: url({{ url_for('static', filename='Images/croppedvinyl.jpg') }});">
+    <div class="jumbotron jumbotron-fluid text-white jumbotron-image shadow"
+      style="background-image: url({{ url_for('static', filename='Images/croppedvinyl.jpg') }});">
       <div class="lead">
         <h1 class="display-4">Forecasting the Next Big Hit</h1>
         <p class="mb-4">Using Machine Learning to determine whether or not the next hit is danceable.</p>
@@ -90,7 +91,8 @@
       <img class="align-self-start mr-3" src="static/Images/notes.png" alt="notes.png">
       <div class="media-body">
         <h3 class="mt-0">Predicting popular genres on Spotify.</h5>
-        <p class="lead">Using information regarding Spotify's most popular songs so far in 2020, as well as the last 20 years, to predict what genres will be popular in 2021 in the United States.</p>
+          <p class="lead">Using information regarding Spotify's most popular songs so far in 2020, as well as the last
+            20 years, to predict what genres will be popular in 2021 in the United States.</p>
       </div>
     </div>
 
@@ -98,7 +100,8 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <p style="text-align: left;">What makes a song popular? What is the driving force behind a beat that entices individuals to listen over
+          <p style="text-align: left;">What makes a song popular? What is the driving force behind a beat that entices
+            individuals to listen over
             and over again? Even more important to the music industry, what is the magic formula that propels consumers
             to purchase a track or album? What is it that will convert a consumer into a life long fan?
             According to <a
@@ -111,9 +114,10 @@
             puts forth that the sonic features of a song, "like beat, “acousticness,” and “valence,” or mood" play an
             important role in the popularity of a song. They also say, "a hit song, or any other cultural product – like
             a film, or a novel — can’t simply be reverse engineered from what’s been popular in the past. Popular
-            success really is more art than science."
-            <br>
-
+            success really is more art than science."</p>
+          <br>
+          <br>
+          <p>
             Citation: Psychology Today, 06/2018; Berger, J., & Packard, G. (in press). Are atypical things more popular?
             Psychological Science. doi:10.1177/0956797618759465.
             Columbia Business School articles "What Makes a Hit," by <a
@@ -132,14 +136,15 @@
       <br>
       <div class="row">
         <div class="col">
-          
+
         </div>
 
         <br>
 
         <!-- Artist Search -->
         <div class="col">
-          Want to see your favorite artists albums? Drop their name in to get a listing, and decide for yourself which was the best album!
+          Want to see your favorite artists albums? Drop their name in to get a listing, and decide for yourself which
+          was the best album!
         </div>
         <div class="col">
           <div class="container">
@@ -164,18 +169,23 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <iframe src="https://open.spotify.com/embed/track/1h2xVEoJORqrg71HocgqXd" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/track/1h2xVEoJORqrg71HocgqXd" width="300" height="380"
+              frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
           </div>
           <div class="col">
             <p style="text-align: left;">
               While we may not be able to explain the psyche of the musical brain, we can look at the popular songs of
               the past and analyze to see, not only what makes them popular, but use machine learning to create a
-              blueprint for future music. 
-              <p>
-              Using machine learning, we can make predictions using neural networks such as deep learning. We can also use regression to determine variance through our r-squared value. 
-              We can also use different models such as the Lasso Model, Ridge Model, and ElasticNet Model to calculate variance and compare our r-squared values from each model. 
-              Decision Trees and Random Forests can also be implemented to predict our data and through Random Forests, we can see which features contribute the most to our predicted score. 
-              KNN is another model that can help us predict our data. Based on a k value, we can determine the class a data point will belong to and classify our data point. Machine learning is a fun way to predict our data.
+              blueprint for future music.
+            <p>
+              Using machine learning, we can make predictions using neural networks such as deep learning. We can also
+              use regression to determine variance through our r-squared value.
+              We can also use different models such as the Lasso Model, Ridge Model, and ElasticNet Model to calculate
+              variance and compare our r-squared values from each model.
+              Decision Trees and Random Forests can also be implemented to predict our data and through Random Forests,
+              we can see which features contribute the most to our predicted score.
+              KNN is another model that can help us predict our data. Based on a k value, we can determine the class a
+              data point will belong to and classify our data point. Machine learning is a fun way to predict our data.
             </p>
           </div>
         </div>
@@ -189,174 +199,195 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <p style="text-align: left;">Spotipy is a lightweight Python library for the 
-                <a
-                href="https://developer.spotify.com/web-api/"
-                title="Spotify Web API">Spotify Web API</a>
-                . With Spotipy you get full access to all of the music data provided by the Spotify platform. Using an import of spotipy and from spotipy.oauth2 we were then able to import SpotifyClientCredentials to access their seemingly limitless music data.
-              </p>
-
-              <br>
-              
-              <p>
-                Tableau is a visual analytics platform transforming the way we use data to solve problems—empowering people and organizations to make the most of their data. For more information, please check out why many folks use <a href="https://www.tableau.com/why-tableau/what-is-tableau"
-                title="Tableau">Tableau</a>. 
+              <p style="text-align: left;">Spotipy is a lightweight Python library for the
+                <a href="https://developer.spotify.com/web-api/" title="Spotify Web API">Spotify Web API</a>
+                . With Spotipy you get full access to all of the music data provided by the Spotify platform. Using an
+                import of spotipy and from spotipy.oauth2 we were then able to import SpotifyClientCredentials to access
+                their seemingly limitless music data.
               </p>
 
               <br>
 
               <p>
-                Heroku is a cloud platform as a service (PaaS) supporting several programming languages. One of the first cloud platforms, Heroku has been in development since June 2007, when it supported only the Ruby programming language, but now supports Java, Node.js, Scala, Clojure, Python, PHP, and Go.[1][2] For this reason, Heroku is said to be a polyglot platform as it has features for a developer to build, run and scale applications in a similar manner across most languages. Heroku was acquired by Salesforce.com in 2010 for $212 million.
-
-                <br>
-
-                Our group utilized Heroku's free deployment to depoloy our <a href="https://spotify-ml-redgroup.herokuapp.com/"
-                title="web page">web page</a>. For more information on Heroku, check out their website or read up on <a href="https://en.wikipedia.org/wiki/Heroku"
-                title="web page">Wikipedia</a>.
+                Tableau is a visual analytics platform transforming the way we use data to solve problems—empowering
+                people and organizations to make the most of their data. For more information, please check out why many
+                folks use <a href="https://www.tableau.com/why-tableau/what-is-tableau" title="Tableau">Tableau</a>.
               </p>
 
-                <br>
+              <br>
 
               <p>
-                Machine learning (ML) is the study of computer algorithms that improve automatically through expertise.[1][2] It is seen as a subset of artificial intelligeence. Machine Learning Algorithms build a mathemtical model based on sample data, known as training data to make predictions or decisions without being explicitly programmed to do so.[3] For more information on machine learning, you can go to <a href = "https://en.wikipedia.org/wiki/Machine_learning">.
-              </p>
+                Heroku is a cloud platform as a service (PaaS) supporting several programming languages. One of the
+                first cloud platforms, Heroku has been in development since June 2007, when it supported only the Ruby
+                programming language, but now supports Java, Node.js, Scala, Clojure, Python, PHP, and Go.[1][2] For
+                this reason, Heroku is said to be a polyglot platform as it has features for a developer to build, run
+                and scale applications in a similar manner across most languages. Heroku was acquired by Salesforce.com
+                in 2010 for $212 million.
 
                 <br>
-              
-              <p>
-                Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy at <a href = "https://en.wikipedia.org/wiki/NumPy">. SciPy at <a href = "https://en.wikipedia.org/wiki/SciPy"> makes use of Matplotlib. With Matplotlib, static, animated, and interactive visualizations can be created in Python. To learn more about matplotlib, check out <a href = "https://en.wikipedia.org/wiki/Matplotlib">.
+
+                Our group utilized Heroku's free deployment to depoloy our <a
+                  href="https://spotify-ml-redgroup.herokuapp.com/" title="web page">web page</a>. For more information
+                on Heroku, check out their website or read up on <a href="https://en.wikipedia.org/wiki/Heroku"
+                  title="web page">Wikipedia</a>.
               </p>
 
-                <br>
+              <br>
 
               <p>
-                Pandas is a software library written for the Python programming language for data manipulation and analysis. It offers data structures and operations for manipulating numerical tables and time series. The name is derived from the term panel data, an econometrics for data sets that include observations over multiple time periods for the same individuals.[3] Its name is a play on the phrase Python data analysis itself. [4] To learn more about Pandas, check out <a href = "https://en.wikipedia.org/wiki/Pandas_(software)">.
+                Machine learning (ML) is the study of computer algorithms that improve automatically through
+                expertise.[1][2] It is seen as a subset of artificial intelligeence. Machine Learning Algorithms build a
+                mathemtical model based on sample data, known as training data to make predictions or decisions without
+                being explicitly programmed to do so.[3] For more information on machine learning, you can go to <a
+                  href="https://en.wikipedia.org/wiki/Machine_learning">.
               </p>
 
-            </div>    
+              <br>
 
-        <br>
+              <p>
+                Matplotlib is a plotting library for the Python programming language and its numerical mathematics
+                extension NumPy at <a href="https://en.wikipedia.org/wiki/NumPy">. SciPy at <a
+                    href="https://en.wikipedia.org/wiki/SciPy"> makes use of Matplotlib. With Matplotlib, static,
+                    animated, and interactive visualizations can be created in Python. To learn more about matplotlib,
+                    check out <a href="https://en.wikipedia.org/wiki/Matplotlib">.
+              </p>
 
-        <hr>
+              <br>
 
-        <div class="container">
-          <div class="row">
-            <h1>Site Developers <small>Feel free to network/ connect.</small></h1>
-          </div>
-        </div>
+              <p>
+                Pandas is a software library written for the Python programming language for data manipulation and
+                analysis. It offers data structures and operations for manipulating numerical tables and time series.
+                The name is derived from the term panel data, an econometrics for data sets that include observations
+                over multiple time periods for the same individuals.[3] Its name is a play on the phrase Python data
+                analysis itself. [4] To learn more about Pandas, check out <a
+                  href="https://en.wikipedia.org/wiki/Pandas_(software)">.
+              </p>
 
-        <hr>
+            </div>
 
-        <!-- CARDS -->
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
-                <img alt="Carrie Chunn" class="card-img-top embed-responsive-item"
-                  src="{{ url_for('static', filename='Images/CarrieLI.jpeg') }}">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Carrie Chunn</h5>
-                  <p class="card-text">Professional Materials</p>
-                  <a href="https://www.linkedin.com/in/carrie-chunn/" class="btn btn-primary">LinkedIn</a>
-                  <a href="https://github.com/crchunn" class="btn btn-primary">GitHub</a>
+            <br>
+
+            <hr>
+
+            <div class="container">
+              <div class="row">
+                <h1>Site Developers <small>Feel free to network/ connect.</small></h1>
+              </div>
+            </div>
+
+            <hr>
+
+            <!-- CARDS -->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
+                    <img alt="Carrie Chunn" class="card-img-top embed-responsive-item"
+                      src="{{ url_for('static', filename='Images/CarrieLI.jpeg') }}">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Carrie Chunn</h5>
+                      <p class="card-text">Professional Materials</p>
+                      <a href="https://www.linkedin.com/in/carrie-chunn/" class="btn btn-primary">LinkedIn</a>
+                      <a href="https://github.com/crchunn" class="btn btn-primary">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
+                    <img alt="Kevin Eggert" class="card-img-top embed-responsive-item"
+                      src="{{ url_for('static', filename='Images/KevinLI.jpeg') }}">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Kevin Eggert</h5>
+                      <p class="card-text">Professional Materials</p>
+                      <a href="https://www.linkedin.com/in/kevin--eggert/" class="btn btn-primary">LinkedIn</a>
+                      <a href="https://github.com/keggert" class="btn btn-primary">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
+                    <img alt="Josh Jenkins" class="card-img-top embed-responsive-item"
+                      src="{{ url_for('static', filename='Images/JoshLI.png') }}">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Josh Jenkins</h5>
+                      <p class="card-text">Professional Materials</p>
+                      <a href="www.linkedin.com/in/joshua-jenkins-51100a9a" class="btn btn-primary">LinkedIn</a>
+                      <a href="https://github.com/joshmelvinj" class="btn btn-primary">GitHub</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-4">
-              <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
-                <img alt="Kevin Eggert" class="card-img-top embed-responsive-item"
-                  src="{{ url_for('static', filename='Images/KevinLI.jpeg') }}">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Kevin Eggert</h5>
-                  <p class="card-text">Professional Materials</p>
-                  <a href="https://www.linkedin.com/in/kevin--eggert/" class="btn btn-primary">LinkedIn</a>
-                  <a href="https://github.com/keggert" class="btn btn-primary">GitHub</a>
+            <br>
+
+            <hr>
+
+            <br>
+
+            <!-- CAROUSEL -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#spotify" data-slide-to="0" class="active"></li>
+                <li data-target="#github" data-slide-to="1"></li>
+                <li data-target="#machinelearning" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="{{ url_for('static', filename='Images/spotifydev1.png') }}"
+                    alt="Spotify for Developers">
                 </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
-                <img alt="Josh Jenkins" class="card-img-top embed-responsive-item"
-                  src="{{ url_for('static', filename='Images/JoshLI.png') }}">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Josh Jenkins</h5>
-                  <p class="card-text">Professional Materials</p>
-                  <a href="www.linkedin.com/in/joshua-jenkins-51100a9a" class="btn btn-primary">LinkedIn</a>
-                  <a href="https://github.com/joshmelvinj" class="btn btn-primary">GitHub</a>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="{{ url_for('static', filename='Images/GitHub1.jpeg') }}" alt="GitHub">
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <br>
-
-        <hr>
-
-        <br>
-
-        <!-- CAROUSEL -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#spotify" data-slide-to="0" class="active"></li>
-            <li data-target="#github" data-slide-to="1"></li>
-            <li data-target="#machinelearning" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="{{ url_for('static', filename='Images/spotifydev1.png') }}"
-                alt="Spotify for Developers">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="{{ url_for('static', filename='Images/GitHub1.jpeg') }}" alt="GitHub">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="{{ url_for('static', filename='Images/ML1.jpeg') }}"
-                alt="Machine Learning">
-            </div>
-          <a class="carousel-control-prev" href="https://developer.spotify.com/" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Spotify for Devs</span>
-          </a>
-          <!-- <a class="carousel-control-next" href="https://github.com/" role="button" data-slide="next">
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="{{ url_for('static', filename='Images/ML1.jpeg') }}"
+                    alt="Machine Learning">
+                </div>
+                <a class="carousel-control-prev" href="https://developer.spotify.com/" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Spotify for Devs</span>
+                </a>
+                <!-- <a class="carousel-control-next" href="https://github.com/" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">GitHub</span>
           </a> -->
-          <a class="carousel-control-next" href="https://en.wikipedia.org/wiki/Machine_learning" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Machine Learning Wikipedia Page</span>
-          </a>
-        </div>
+                <a class="carousel-control-next" href="https://en.wikipedia.org/wiki/Machine_learning" role="button"
+                  data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Machine Learning Wikipedia Page</span>
+                </a>
+              </div>
 
-        <br>
+              <br>
 
-        <hr>
+              <hr>
 
-        <br>
+              <br>
 
-        <!-- FOOTER -->
-        <footer class="footer">
-          <div class="container">
-            <span style="font-size: 48px">
-              <a href="https://github.com/crchunn/Final-Project" style="font-size: 48px; color: black">
-                <i class="fab fa-github"></i>
-              </a>
-            </span>
-          </div>
-        </footer>
+              <!-- FOOTER -->
+              <footer class="footer">
+                <div class="container">
+                  <span style="font-size: 48px">
+                    <a href="https://github.com/crchunn/Final-Project" style="font-size: 48px; color: black">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </span>
+                </div>
+              </footer>
 
-        <!-- SCRIPTS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-          crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-          crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-          crossorigin="anonymous"></script>
+              <!-- SCRIPTS -->
+              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
 
 </body>
 
