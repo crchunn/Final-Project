@@ -110,9 +110,10 @@
           <br>
 
           <div class="row">
-            KNN or K Nearest Neighbors refers to a algorithm used for classification. It helps with outlier sensitivity, the ability to classify non-linear data,
-            and has high accuracy. A negative of KNN is that it requires a lot of memory. When choosing a K value for KNN, it is good to loop through a range of k and calculate the score.
-            A k-value should be chosen where the score starts to stabilize. I chose a k range of 40 in order for me to see the scores stabilize. 
+            The residual plots are used to help us quantify regression. We make predictions based on the fitted model and we plot the differences between the model predicted values and actual y values against the model preedicted values. 
+            Our r-squared value is the baseline metric that many Machine Learning tools use to report on the score. A higher r-squared value means that our model is highly preditive. 
+            If our r-squared value is above 0.85, it means our model accounts for about 85% of the variability of the data.
+            Using our testing and training data, we take a slice of our data (71%) to build our model and we use the slice to predict the values for the remaining 29%. 
           </div>
 
           <br>
