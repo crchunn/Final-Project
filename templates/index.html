@@ -87,11 +87,10 @@
 
     <!-- MEDIA UNIT -->
     <div class="media">
-      <img src="static/Images/notes.png" class="align-self-start md-4" alt="notes.png">
+      <img class="align-self-start mr-3" src="static/Images/notes.png" alt="notes.png">
       <div class="media-body">
-        <h5 class="col-md-8; text-left">Predicting popular genres on Spotify.</h5>
-        <pre class="text-left">
-          Using information regarding Spotify's most popular songs so far in 2020, as well as the last 20 years, to predict what genres will be popular in 2021 in the United States.</pre>
+        <h3 class="mt-0">Predicting popular genres on Spotify.</h5>
+        <p class="lead">Using information regarding Spotify's most popular songs so far in 2020, as well as the last 20 years, to predict what genres will be popular in 2021 in the United States.</p>
       </div>
     </div>
 
@@ -179,58 +178,14 @@
 
         <br>
 
-        <!-- CAROUSEL -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="{{ url_for('static', filename='Images/spotifydev1.png') }}"
-                alt="Spotify for Developers">
+        <h1>Site Developers <small>Feel free to network/ connect.</small></h1>
 
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="{{ url_for('static', filename='Images/GitHub1.jpeg') }}" alt="GitHub">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="{{ url_for('static', filename='Images/ML1.jpeg') }}"
-                alt="Machine Learning">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="https://developer.spotify.com/" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Spotify for Devs</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
-        <br>
-        <div class="container">
-          <div class="row">
-            <form action="{{ url_for('handle_data') }}" method="post">
-              <label for="Artist">
-                Artist?
-              </label>
-              <input type="text" name="Artist">
-              <input type="submit">
-            </form>
-          </div>
-        </div>
-
-        <br>
-
-        <!-- <div class='tableauPlaceholder' id='viz1603160013087' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_16031552265290&#47;SpotifyTopArtists&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Spotify_16031552265290&#47;SpotifyTopArtists' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_16031552265290&#47;SpotifyTopArtists&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1603160013087');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
+        <hr>
 
         <!-- CARDS -->
         <div class="container">
           <div class="row">
-            <div class="col-sm d-flex align-items-stretch">
+            <div class="col-md-4">
               <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
                 <img alt="Carrie Chunn" class="card-img-top embed-responsive-item"
                   src="{{ url_for('static', filename='Images/CarrieLI.jpeg') }}">
@@ -243,7 +198,7 @@
               </div>
             </div>
 
-            <div class="col-sm d-flex align-items-stretch">
+            <div class="col-md-4">
               <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
                 <img alt="Kevin Eggert" class="card-img-top embed-responsive-item"
                   src="{{ url_for('static', filename='Images/KevinLI.jpeg') }}">
@@ -256,7 +211,7 @@
               </div>
             </div>
 
-            <div class="col-sm d-flex align-items-stretch">
+            <div class="col-md-4">
               <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
                 <img alt="Josh Jenkins" class="card-img-top embed-responsive-item"
                   src="{{ url_for('static', filename='Images/JoshLI.png') }}">
@@ -269,6 +224,41 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <hr>
+
+        <!-- CAROUSEL -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#spotify" data-slide-to="0" class="active"></li>
+            <li data-target="#github" data-slide-to="1"></li>
+            <li data-target="#machinelearning" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="{{ url_for('static', filename='Images/spotifydev1.png') }}"
+                alt="Spotify for Developers">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="{{ url_for('static', filename='Images/GitHub1.jpeg') }}" alt="GitHub">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="{{ url_for('static', filename='Images/ML1.jpeg') }}"
+                alt="Machine Learning">
+            </div>
+          <a class="carousel-control-prev" href="https://developer.spotify.com/" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Spotify for Devs</span>
+          </a>
+          <!-- <a class="carousel-control-next" href="https://github.com/" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">GitHub</span>
+          </a> -->
+          <a class="carousel-control-next" href="https://en.wikipedia.org/wiki/Machine_learning" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Machine Learning Wikipedia Page</span>
+          </a>
         </div>
 
         <hr>

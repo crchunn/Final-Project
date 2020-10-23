@@ -1,9 +1,39 @@
 @import url('http://getbootstrap.com/dist/css/bootstrap.css');
 
-.carousel {
+/* .carousel {
     width:640px;
     height:360px;
+    padding: 10px;
   }
+
+.carousel-inner {
+  border-top: 10px;
+  border-left: 10px;
+  border-right: 10px;
+  border-bottom: 00px;
+  border-color: none;
+  border-style: solid;
+} */
+
+.carousel {
+  box-sizing: content-box;
+  border-top: 10px;
+  border-left: 10px;
+  border-right: 10px;
+  border-bottom: 00px;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.media {
+  font-size: medium;
+  text-align: left;
+}
+
+h1 {
+  font-size: medium;
+  text-align: left;
+}
   
 p {
   font-size: medium;
@@ -12,16 +42,23 @@ p {
 
 .jumbotron {
   background-size: cover;
-  margin-top: 50px;
   text-align: center;
 }
 
-.lead {
-  max-width: 550px;
-  margin: 0px auto;
-}
+/* label {
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  position: fixed;
+  right: 50px;
+  bottom 30px;
+  padding: 10px;
+} */
 
 p.mb-4 {
   font-size: medium;
+  text-align: center;
+}
+
+.card-text {
   text-align: center;
 }
