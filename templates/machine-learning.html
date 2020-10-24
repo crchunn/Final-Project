@@ -11,11 +11,82 @@
 
   <title>Machine Learning Visuals</title>
 </head>
-<ul class="nav justify-content-end">
+
+<!-- NAVBAR -->
+<div class="index">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Spoti(Py)</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Left NavBar -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Code
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/tableau">Tableau</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/tableau2">Machine Learning</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/machine">Machine Learning Graphs</a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Right NavBar -->
+      <div class="wrapper">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="https://www.spotify.com/us/">
+              <img class="nav-music"
+                src="{{ url_for('static', filename='Images/250px-Spotify_logo_with_text.svg.png') }}">
+              </a>
+            </div>
+          </div>
+
+
+          <ul class="nav navbar-nav navbar-right"></ul>
+          <span class="navbar-text">
+
+          </span>
+          </ul>
+      </div>
+  </nav>
+
+<!-- <ul class="nav justify-content-end">
   <li class="nav-item">
     <a class="nav-link active" href="/">Home</a>
   </li>
+</ul> -->
+<!-- <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Machine Learning Graphs</li>
+  </ol>
+</nav> -->
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link disabled" href="/tableau">Tableau</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/tableau2">Machine Learning</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/machine">Machine Learning Graphs</a>
+  </li>
 </ul>
+
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">Graphing the Popularity</h1>
@@ -38,22 +109,44 @@
             <h2 class="comparison-header">KNN Explicit Plot</h2>
             <img src="../static/Images/KNN - Explicit.png" alt="KNN - Explicit" class="comparison-image img-responsive">
           </div>
+
           <div class="col">
             <h2 class="comparison-header">KNN Mode Plot</h2>
             <img src="../static/Images/KNN - Mode.png" alt="KNN - Mode" class="comparison-image img-responsive">
           </div>
-        </div>
 
+        </div>
 
         <div class="container">
           <div class="row">
             <div class="col">
-              1 of 2
+              This KNN plot is measuring explicit (explicit or not) with a range of 40. We can see that the data starts to stabilize as we hit 23 and stabilizes at 33, which is the k-value I used for the calculations.
+              Based on a k-value of 33, our accuracy was 86%.
             </div>
             <div class="col">
-              2 of 2
+              This KNN plot is measuring mode (major or minor) with a range of 40. We can see that the data starts to stabilize as we hit 27 and stabilizes at 35, which is the k-value I used for the calculations.
+              Based on a k-value of 35, our accuracy was 68%.
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="container">
+
+            <div class="row">
+              KNN or K Nearest Neighbors refers to a algorithm used for classification. It helps with outlier sensitivity, the ability to classify non-linear data,
+              and has high accuracy. A negative of KNN is that it requires a lot of memory. When choosing a K value for KNN, it is good to loop through a range of k and calculate the score.
+              A k-value should be chosen where the score starts to stabilize. I chose a k range of 40 in order for me to see the scores stabilize. 
             </div>
           </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
 
       <div class="container">
         <div class="row">
@@ -72,12 +165,30 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              1 of 2
+              With this residual plot on liveness, we are making predictions based on a fitted model. We are plotting the differences between the model predicted values and actual y values against the model predicted values using scaled data. 
+              After completing our residual plot, we calculated our r-squared value, which tell us how much of the variance can be explained by the data. Our regular model gave us an r-squared value of 0.48.
+              We also used the Lasso Model, Ridge Model, and ElasticNet model to calculate our r-squared values and our r-squared values were -0.26 (Lasso), 0.32(Ridge), and -0.27(ElasticNet).
+              With this residual plot, the first Model gave us the highest r-squared value. As a result of having negative r-squared values, our fit is worse than using a horizontal line if we used the Lasso or ElasticNet models for our calculations.
             </div>
             <div class="col">
-              2 of 2
+              With this residual plot on popularity, we are making predictions based on a fitted model. We are plotting the differences between the model predicted values and actual y values against the model predicted values using scaled data. 
+              After completing our residual plot, we calculated our r-squared value, which tell us how much of the variance can be explained by the data. Our regular model gave us an r-squared value of 0.80.
+              We also used the Lasso Model, Ridge Model, and ElasticNet model to calculate our r-squared values and our r-squared values were 0.948 (Lasso), 0.81(Ridge), and 0.942(ElasticNet).
+              With this residual plot, the Lasso Model gave us the highest r-squared value by 0.006.
             </div>
           </div>
+
+          <br>
+
+          <div class="row">
+            The residual plots are used to help us quantify regression. We make predictions based on the fitted model and we plot the differences between the model predicted values and actual y values against the model preedicted values. 
+            Our r-squared value is the baseline metric that many Machine Learning tools use to report on the score. A higher r-squared value means that our model is highly preditive. 
+            If our r-squared value is above 0.85, it means our model accounts for about 85% of the variability of the data.
+            Using our testing and training data, we take a slice of our data (71%) to build our model and we use the slice to predict the values for the remaining 29%. 
+          </div>
+
+          <br>
+          <br>
 
           <div class="container">
             <div class="row">
@@ -96,13 +207,19 @@
             <div class="container">
               <div class="row">
                 <div class="col">
-                  1 of 2
+                  With this residual plot on year, we are making predictions based on a fitted model. We are plotting the differences between the model predicted values and actual y values against the model predicted values using scaled data. 
+                  After completing our residual plot, we calculated our r-squared value, which tell us how much of the variance can be explained by the data. Our regular model gave us an r-squared value of 0.87.
+                  We also used the Lasso Model, Ridge Model, and ElasticNet model to calculate our r-squared values and our r-squared values were 0.91 (Lasso), 0.88(Ridge), and 0.90(ElasticNet).
+                  With this residual plot, the Lasso Model gave us the highest r-squared value.
                 </div>
                 <div class="col">
-                  2 of 2
+                  This graph is looking at year vs. danceability from 2010-2020 using regression. From this graph, we can see that danceability stayed relatively uniform from 2010-2016 before increasing in popularity from 2017-2020. 
+                  As time has gone on, songs have become more danceable.
                 </div>
               </div>
 
+              <br>
+              <br>
               
               <div class="container">
                 <div class="row">
@@ -121,12 +238,18 @@
                 <div class="container">
                   <div class="row">
                     <div class="col">
-                      1 of 2
+                      This graph is looking at year vs. energy from 2010-2020 using regression. Based on this graph, we can see that energy peaked in 2010. Energy 
+                      throughout the time being measured stayed around 0.6. Songs have had less energy as time has gone on based on the graph.
                     </div>
                     <div class="col">
-                      2 of 2
+                      This graph is looking at year vs. popularity from 2010-2020 using regression. From this graph, we can view the changes in popularity over time.
+                      The popularity continued to increase from 2010-2019. A reason for this increase in popularity may be in part to more an increased number of users on Spotify. 
+                      There is a dip in popularity in 2020 likely due to covid as well as the Kaggle dataset being published early this year.
                     </div>
                   </div>
+
+                  <br>
+                  <br>
 </div>
 <!-- End of container  -->
 
