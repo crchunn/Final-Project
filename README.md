@@ -24,10 +24,13 @@ Our group utilized Heroku's free deployment to deploy our webpage. For more info
 
 
 ### Machine Learning
-Machine learning (ML) is the study of computer algorithms that improve automatically through expertise. [1]It is seen as a subset of artificial intelligeence. Machine Learning Algorithms build a mathematical model based on sample data, known as training data to make predictions or decisions without being explicitly programmed to do so. [1]For more information on machine learning, you can go to <https://en.wikipedia.org/wiki/Machine_learning>.
+Machine learning (ML) is the study of computer algorithms that improve automatically through expertise. [1]It is seen as a subset of artificial intelligence. Machine Learning Algorithms build a mathematical model based on sample data, known as training data to make predictions or decisions without being explicitly programmed to do so. [1]For more information on machine learning, you can go to <https://en.wikipedia.org/wiki/Machine_learning>.
 
 ### Matplotlib
 Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy at <https://en.wikipedia.org/wiki/NumPy>. SciPy at <https://en.wikipedia.org/wiki/SciPy> makes use of Matplotlib. With Matplotlib, static, animated, and interactive visualizations can be created in Python. To learn more about matplotlib, check out <https://en.wikipedia.org/wiki/Matplotlib>.
 
 ### Pandas
 Pandas is a software library written for the Python programming language for data manipulation and analysis. It offers data structures and operations for manipulating numerical tables and time series. The name is derived from the term panel data, an econometrics for data sets that include observations over multiple time periods for the same individuals. [2]Its name is a play on the phrase Python data analysis itself. [4]To learn more about Pandas, check out <https://en.wikipedia.org/wiki/Pandas_(software)>.
+
+### Scikit-learn
+Scikit (formerly scikits.learn and also known as sklearn) is a free software machine learning library for the Python programming language.[3] It features various classification, regression, and clustering algorithms including support vector machines, random forests, and k-means, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy. To learn more, check out <https://en.wikipedia.org/wiki/Scikit-learn>.
