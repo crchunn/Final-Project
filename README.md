@@ -33,4 +33,8 @@ Matplotlib is a plotting library for the Python programming language and its num
 Pandas is a software library written for the Python programming language for data manipulation and analysis. It offers data structures and operations for manipulating numerical tables and time series. The name is derived from the term panel data, an econometrics for data sets that include observations over multiple time periods for the same individuals. [2]Its name is a play on the phrase Python data analysis itself. [4]To learn more about Pandas, check out <https://en.wikipedia.org/wiki/Pandas_(software)>.
 
 ### Scikit-learn
-Scikit (formerly scikits.learn and also known as sklearn) is a free software machine learning library for the Python programming language.[3] It features various classification, regression, and clustering algorithms including support vector machines, random forests, and k-means, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy. To learn more, check out <https://en.wikipedia.org/wiki/Scikit-learn>.
+Scikit (formerly scikits.learn and also known as sklearn) is a free software machine learning library for the Python programming language.[3] It features various classification, regression, and clustering algorithms including support vector machines, random forests, and k-means, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy. To learn more about Scikit-leaern, check out <https://en.wikipedia.org/wiki/Scikit-learn>.
+
+### TensorFlow
+TensorFlow is a free and open-source software library for dataflow and differentiable programming across a range of tasks. It is a symbolic math library, and is also used for machine learning applications such as neural networks[4]. It is used for both research and production at Google.[4] To learn more about, check out
+<https://en.wikipedia.org/wiki/TensorFlow>.
