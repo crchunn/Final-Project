@@ -48,8 +48,8 @@
           <div class="container-fluid">
             <div class="navbar-header">
               <a class="navbar-brand" href="https://www.spotify.com/us/">
-              <img class="nav-music"
-                src="{{ url_for('static', filename='Images/250px-Spotify_logo_with_text.svg.png') }}">
+                <img class="nav-music"
+                  src="{{ url_for('static', filename='Images/250px-Spotify_logo_with_text.svg.png') }}">
               </a>
             </div>
           </div>
@@ -63,7 +63,7 @@
       </div>
   </nav>
 
- <!-- <ul class="nav justify-content-end">
+  <!-- <ul class="nav justify-content-end">
     <li class="nav-item">
       <a class="nav-link active" href="/">Home</a>
     </li>
@@ -87,23 +87,23 @@
       <a class="nav-link disabled" href="/machine">Machine Learning Graphs</a>
     </li>
   </ul>
-  
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Spotify Graphs</h1>
-    <p class="lead">More Fun Spotify Visuals.</p>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Spotify Graphs</h1>
+      <p class="lead">More Fun Spotify Visuals.</p>
+    </div>
   </div>
-</div>
 
 
-</head>
+  </head>
 
-<body>
- 
+  <body>
+    <!--  
   <div class="tableau">
     <div class="card">
 
-    </div>
+    </div> -->
 
 
 
@@ -128,6 +128,9 @@
     <script
       type='text/javascript'>                    var divElement = document.getElementById('viz1603330048080'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1227px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     <br>
+
+
+
     <div class="card">
       <div class="card-body">
         These Tableau visuals graph the average danceability, explicit, popularity, and energy for each year.
@@ -179,6 +182,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
-</body>
+  </body>
 
 </html>
