@@ -36,5 +36,4 @@ Pandas is a software library written for the Python programming language for dat
 Scikit (formerly scikits.learn and also known as sklearn) is a free software machine learning library for the Python programming language.[3] It features various classification, regression, and clustering algorithms including support vector machines, random forests, and k-means, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy. To learn more about Scikit-leaern, check out <https://en.wikipedia.org/wiki/Scikit-learn>.
 
 ### TensorFlow
-TensorFlow is a free and open-source software library for dataflow and differentiable programming across a range of tasks. It is a symbolic math library, and is also used for machine learning applications such as neural networks[4]. It is used for both research and production at Google.[4] To learn more about, check out
-<https://en.wikipedia.org/wiki/TensorFlow>.
+TensorFlow is a free and open-source software library for dataflow and differentiable programming across a range of tasks. It is a symbolic math library, and is also used for machine learning applications such as neural networks[4]. It is used for both research and production at Google.[4] To learn more about, check ou <https://en.wikipedia.org/wiki/TensorFlow>.
